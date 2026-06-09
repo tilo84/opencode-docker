@@ -1,0 +1,10 @@
+services:
+  opencode:
+    build: .
+    stdin_open: true
+    tty: true
+    command: /root/.opencode/bin/opencode
+    container_name: opencode
+    volumes:
+      - ./workspace:/app/workspace
+      - ./.config:/home/opencode/.config

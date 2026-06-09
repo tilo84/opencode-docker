@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "tilo": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "ai.tilo.network",
+      "options": {
+        "baseURL": "http://ai.tilo.network:11434/v1"
+      },
+      "models": {
+        "qwen2.5-coder:32b": {
+          "name": "Qwen2.5 Coder 32B"
+        }
+      }
+    }
+  },
+  "model": "tilo/qwen2.5-coder:32b"
+}
