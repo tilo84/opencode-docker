@@ -8,11 +8,14 @@
         "baseURL": "http://ai.tilo.network:11434/v1"
       },
       "models": {
-        "qwen2.5-coder:32b": {
-          "name": "Qwen2.5 Coder 32B"
+        "qwen2.5-coder:7b": {
+          "name": "Qwen2.5 Coder 7B"
+        },
+        "gemma4:31b": {
+          "name": "Gemma4 31B"
         }
       }
     }
   },
-  "model": "tilo/qwen2.5-coder:32b"
+  "model": "tilo/qwen2.5-coder:7b"
 }
