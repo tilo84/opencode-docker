@@ -1,15 +1,15 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
-    "tilo": {
+    "equicon": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "ai.tilo.network",
+      "name": "ollama.equicon.de",
       "options": {
-        "baseURL": "http://ai.tilo.network:11434/v1"
+        "baseURL": "https://ollama.equicon.de/v1"
       },
       "models": {
-        "gemma4:31b": {
-          "name": "Gemma4 31B"
+        "gemma4:26b": {
+          "name": "Gemma4 26B"
         },
         "gemma4:e4b": {
           "name": "Gemma4 E4B"
@@ -20,38 +20,8 @@
         "cogito:32b": {
           "name": "Cogito 32B"
         },
-        "qwen3:32b": {
-          "name": "Qwen3 32B"
-        },
-        "qwen3:30b": {
-          "name": "Qwen3 30B"
-        },
-        "qwen3:14b": {
-          "name": "Qwen3 14B"
-        },
-        "qwen3-coder:30b": {
-          "name": "Qwen3 Coder 30B"
-        },
-        "qwen2.5-coder:14b": {
-          "name": "Qwen2.5 Coder 14B"
-        },
-        "deepseek-r1:32b": {
-          "name": "DeepSeek-R1 32B"
-        },
-        "deepseek-r1:14b": {
-          "name": "DeepSeek-R1 14B"
-        },
-        "deepseek-coder-v2:latest": {
-          "name": "DeepSeek Coder V2"
-        },
-        "phi4:latest": {
-          "name": "Phi 4"
-        },
-        "codellama:34b": {
-          "name": "CodeLlama 34B"
-        },
-        "mistral-small3.1:24b": {
-          "name": "Mistral Small 3.1 24B"
+        "Qwen3.6:27B-Q4_K_M": {
+          "name": "Qwen3.6 27B-Q4_K_M"
         },
         "gemma3:27b": {
           "name": "Gemma 3 27B"
@@ -59,5 +29,5 @@
       }
     }
   },
-  "model": "tilo/gemma4:e4b"
+  "model": "equicon/gemma4:e4b"
 }

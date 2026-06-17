@@ -5,6 +5,8 @@ services:
     tty: true
     command: /root/.opencode/bin/opencode
     container_name: opencode
+    env_file:
+      - .env
     volumes:
       - ./app:/app/
       - ./.config:/home/opencode/.config

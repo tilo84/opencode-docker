@@ -1,5 +1,5 @@
 FROM debian:bookworm-slim AS base
-RUN apt-get update && apt-get install -y curl inetutils-ping
+RUN apt-get update && apt-get install -y curl inetutils-ping xdg-utils python3 python3-pip python3-venv
 
 FROM base AS opencode_base
 RUN groupadd -r opencode && useradd -r -g opencode opencode
